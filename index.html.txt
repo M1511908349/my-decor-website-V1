@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梦立坊装饰 | 专业装修服务 | 案例展示</title>
+    <style>
+        /* 全局简洁风格：中性色+无衬线字体 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 顶部导航 - 极简单色 */
+        header {
+            background-color: #1a1a1a;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 25px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 16px;
+        }
+        nav ul li a:hover {
+            color: #4d9078;
+        }
+        /* 首屏核心区 - 重点突出联系方式 */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+        .contact-highlight {
+            background-color: #4d9078;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.4rem;
+            box-shadow: 0 4px 15px rgba(77, 144, 120, 0.3);
+        }
+        .contact-highlight a {
+            color: white;
+            text-decoration: none;
+        }
+        /* 案例展示区 - 真实项目为核心 */
+        .section {
+            padding: 80px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #1a1a1a;
+            font-size: 2rem;
+        }
+        .cases {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .case-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .case-card:hover {
+            transform: translateY(-10px);
+        }
+        .case-img {
+            height: 200px;
+            background-color: #e0e0e0;
+            background-size: cover;
+            background-position: center;
+        }
+        .case-content {
+            padding: 20px;
+            background: white;
+        }
+        .case-content h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        /* 页脚 - 联系方式二次强化 */
+        footer {
+            background-color: #1a1a1a;
+            color: #aaa;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .footer-contact {
+            font-size: 1.2rem;
+            color: #4d9078;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .copyright {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#cases">案例展示</a></li>
+                    <li><a href="#contact">联系方式</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 首屏：核心卖点+联系方式 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>专业装修 · 品质交付</h1>
+            <p>10年本地经验团队，专注住宅/商业空间设计，从方案到施工全程透明化管理</p>
+            <div class="contact-highlight">
+                <a href="tel:13951069148">立即咨询：孟庆跃 13951069148</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 案例展示区 -->
+    <section id="cases" class="section">
+        <div class="container">
+            <h2 class="section-title">精选案例</h2>
+            <div class="cases">
+                <!-- 案例1 -->
+                <div class="case-card">
+                    <div class="case-img" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="case-content">
+                        <h3>现代简约住宅</h3>
+                        <p>120㎡三居室改造，全屋定制收纳系统，工期45天完工。客户反馈："细节处理超出预期！"</p>
+                    </div>
+                </div>
+                
+                <!-- 案例2 -->
+                <div class="case-card">
+                    <div class="case-img" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="case-content">
+                        <h3>商业空间设计</h3>
+                        <p>80㎡咖啡馆全案设计，融合工业风与暖色调，开业3个月客流提升40%。</p>
+                    </div>
+                </div>
+                
+                <!-- 案例3 -->
+                <div class="case-card">
+                    <div class="case-img" style="background-image: url('https://images.unsplash.com/photo-1600210492493-0946911123c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="case-content">
+                        <h3>旧房翻新工程</h3>
+                        <p>90年代老房改造，解决漏水/布局问题，预算控制精准，客户满意度98%。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚：联系方式二次强调 -->
+    <footer>
+        <div class="container">
+            <div class="footer-contact">
+                24小时咨询热线：<a href="tel:13951069148" style="color:#4d9078;">孟庆跃 13951069148</a>
+            </div>
+            <p>服务区域：宿迁市及周边 | 欢迎预约免费上门量房</p>
+            <div class="copyright">
+                © 2023 梦立坊装饰 | 本网站由专业团队维护，案例真实可查
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
